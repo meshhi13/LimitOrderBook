@@ -44,9 +44,6 @@ orders near a moving mid price, ~5% cancels, ~5% sweeping market orders.
 ./build/lob_benchmark 5000000
 ```
 
-On an Apple M-series laptop this sustains on the order of 5-6M
-orders/sec end-to-end (order entry, matching, and book maintenance).
-
 ## API sketch
 
 ```cpp
