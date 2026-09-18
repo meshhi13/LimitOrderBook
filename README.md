@@ -43,13 +43,3 @@ orders near a moving mid price, ~5% cancels, ~5% sweeping market orders.
 ```sh
 ./build/lob_benchmark 5000000
 ```
-
-## API sketch
-
-```cpp
-lob::MatchingEngine engine;
-lob::OrderId id = engine.submit_limit_order(lob::Side::Buy, /*price=*/10050, /*qty=*/100);
-engine.cancel_order(id);
-
-for (const auto& trade : engine.trades()) { /* ... */ }
-```
